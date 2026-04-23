@@ -1,0 +1,70 @@
+Superstore SQL Data Cleaning & Analysis
+
+Overview
+
+This project focuses on cleaning and analyzing a retail sales dataset using SQL. The raw dataset had issues like duplicate records, missing values, and inconsistent date formats.
+
+The goal was to clean the data properly and then use it to generate useful business insights.
+
+---
+
+Tools Used
+
+* MySQL
+* Excel (for checking outputs)
+* GitHub
+
+---
+
+Dataset
+
+* Superstore sales dataset
+* Contains information on orders, customers, products, sales, and profit
+
+---
+
+Data Cleaning Steps
+
+The following cleaning steps were performed:
+
+* Removed duplicate records using ROW_NUMBER()
+* Handled missing values in columns like City and Customer Name
+* Standardized text fields using LOWER() and TRIM()
+* Fixed inconsistent date formats
+  (some rows had `mm/dd/yyyy` and some had `dd-mm-yyyy`)
+* Used conditional SQL logic (CASE / COALESCE) to correctly convert dates
+* Created a clean dataset (`clean_superstore`) for analysis
+
+---
+
+Analysis Performed
+
+* Total sales and average order value
+* Sales by category
+* Profit by region
+* Monthly sales trends
+* Top customers and products
+* Identification of loss-making orders
+
+---
+
+Key Insights
+
+* A few product categories contribute most of the total sales
+* Some regions generate higher profit than others
+* A small number of customers drive a large portion of revenue
+* There are several loss-making orders which may need attention
+
+---
+
+Conclusion
+
+This project shows how SQL can be used to clean messy data and generate insights that can support business decisions. Clean data is important before doing any analysis.
+
+---
+
+Future Improvements
+
+* Build dashboard in Excel or Power BI
+* Add more advanced analysis (trends, forecasting)
+* Automate data cleaning process
